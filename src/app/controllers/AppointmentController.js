@@ -13,6 +13,11 @@ class AppointmentController {
   }
 
   async store(req, res) {
+    if (!req.body.date) {
+      req.flash('error', 'Please fill the date!')
+      return res.redirect(`/app/appointments/new/${ req.params.provider }`)
+    }
+
     const {
       id
     } = req.session.user

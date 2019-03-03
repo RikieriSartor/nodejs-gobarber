@@ -2,6 +2,9 @@
 {% block body %}
   <div class="content">
     <strong>Agendando horário</strong>
+
+    {% include "_partials/flash.njk" %}
+
     <div class="provider">
       <div>
         <img src="/files/{{ provider.avatar }}" />
@@ -10,7 +13,7 @@
     </div>
 
     <form action="/app/appointments/new/{{ provider.id }}" method="post">
-      <input type="text" class="flatpickr" placeholder="Escolha uma data" />
+      <input type="text" class="flatpickr" placeholder="Escolha uma data" required/>
 
       <div id="hours"></div>
 

@@ -167,6 +167,24 @@ body {
   background: #c15858;
 }
 
+.main-wrapper .content a.agendamento {
+  background: #7159c1;
+  text-decoration: none;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  border: 0;
+  color: #fff;
+}
+
+.main-wrapper .content a.agendamento:hover {
+  background: #5d4a9e;
+}
+
 .main-wrapper .content p {
   font-size: 14px;
   color: #666;
