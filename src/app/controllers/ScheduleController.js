@@ -19,7 +19,7 @@ class ScheduleController {
         date: {
           [Op.between]: [
             moment().startOf('day').format(),
-            moment().add(10, 'days').calendar()
+            moment().add(10, 'days').endOf('day').format()
           ]
         }
       }
